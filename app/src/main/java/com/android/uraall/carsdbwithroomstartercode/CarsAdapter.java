@@ -28,7 +28,6 @@ public class CarsAdapter extends RecyclerView.Adapter<CarsAdapter.MyViewHolder> 
             super(view);
             nameTextView = view.findViewById(R.id.nameTextView);
             priceTextView = view.findViewById(R.id.priceTextView);
-
         }
     }
 
@@ -49,8 +48,6 @@ public class CarsAdapter extends RecyclerView.Adapter<CarsAdapter.MyViewHolder> 
 
     @Override
     public void onBindViewHolder(MyViewHolder holder, final int position) {
-
-
         final Car car = cars.get(position);
 
         holder.nameTextView.setText(car.getName());
